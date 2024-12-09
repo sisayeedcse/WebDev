@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a.AllButton {
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 2px solid #9d02b7;
+    background: #9d02b7;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+a.AllButton:hover {
+    background: transparent;
+    border: 2px solid #9d02b7;
+}
+
+
+/* Header Section */
+
+#Header {}
+
+a.navbar-brand {
+    font-size: 25px;
+    font-weight: 600;
+    color: #9d02b7;
+}
+
+a.navbar-brand:hover {
+    color: #55078f;
+}
+
+a.nav-link {
+    padding: 20px;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    color: #9d02b7;
+}
+
+a.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 80%;
+    transition: 0.5s linear;
+    height: 2px;
+    border-bottom: 2px solid #55078f;
+}
+
+a.nav-link:hover::before {
+    width: 100%;
+}
+
+a.nav-link:hover {
+    color: #55078f;
+}
+
+
+/* Header Section */
+
+
+/* Banner Section */
+
+#Banner {
+    background: linear-gradient(#00000050, #00000050), linear-gradient(#00000050, #00000050), url(../Images/s.i.sayeed.jpg);
+    color: #ededed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    position: relative;
+}
+/*Hire me Page */
+#hireSec{
+    background: linear-gradient(#00000050, #00000050), linear-gradient(#00000050, #00000050), url(../Images/s.i.sayeed.jpg);
+    color: #ededed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+}
+#hireSec h1{
+    font-size: 35px;
+    margin: 2rem 0rem;
+    color: #fff;
+}
+#hireSec input{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    margin: 1rem 0rem;
+    width: 400px;
+}
+#hireSec textarea{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    margin: 1rem 0rem;
+    width: 400px;
+}
+#hireSec a.btn{
+    padding: 20px 45px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background:#55078f;
+    color: #fff;
+}
+.hPop{
+    display: none;
+}
+.hPop_2{
+    width: 500px;
+    height: auto;
+    background-image: linear-gradient(120deg, #e2c35d, #d88771);
+    position: absolute;
+    transform: translate(50% , 50%);
+    border-radius: 20px;
+}
+/*Hire me Page */
+.BannerWrapper {
+    position: absolute;
+    top: 150px;
+    border-left: 4px solid #fff;
+}
+.divCon_1{
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+.divCon{
+    width: 600px;
+    height: 350px;
+    background-image: linear-gradient(120deg, #e2c35d, #d88771);
+    position: absolute;
+    transform: translate(50% , 30%);
+    border-radius: 20px;
+}
+.popHead h1{
+    font-size: 30px;
+    color:#55078f;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.popDecs p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+.popBtn a.btn{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 50000px;
+    background-color: #55078f;
+    color: #fff;
+    font-size: 18px;
+}
+.popBtn a.btn:hover{
+    background: #000;
+}
+.popIcon i{
+    font-size: 20px;
+    margin-left: 500px;
+    color: #55078f;
+}
+.popIcon i:hover{
+    color: #000;
+}
+.BannerWrapper a {
+    margin-left: 20px;
+}
+
+.BannerWrapper h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #ededed;
+}
+
+.BannerWrapper h2 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #9d02b7;
+}
+
+.BannerWrapper p {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+section#Banner img {
+    right: -40px;
+    width: 380px;
+    height: 400px;
+    position: absolute;
+    top: 75px;
+    border-radius: 0px 100px 0px 100px;
+}
+
+span.BannerSp::before {
+    content: '';
+    animation: BannerSp infinite 8s;
+    color: #f1f5f5f5;
+}
+
+@keyframes BannerSp {
+    0% {
+        content: 'Freelancer';
+    }
+    20% {
+        content: 'Web Designer';
+    }
+    40% {
+        content: 'Web Developer';
+    }
+    60% {
+        content: 'WordPress Expert';
+    }
+    80% {
+        content: 'Web Designer';
+    }
+    100% {
+        content: 'Freelancer';
+    }
+}
+
+
+/* Banner Section */
+
+
+/* About Section */
+
+header#AboutSec {
+    padding: 90px 0px;
+    background: #ededed;
+}
+
+header#AboutSec h3 {
+    margin: auto;
+    position: relative;
+    color: #9d02b7;
+    width: 350px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+header#AboutSec p {
+    margin-left: 0px;
+    margin: 30px 0px;
+    font-size: 18px;
+    padding: 15px 110px;
+    text-align: center;
+    color: #444;
+}
+
+header#AboutSec a {
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+header#AboutSec a:hover {
+    color: #777;
+}
+
+.BorderB h3::before {
+    bottom: -10px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid #9d02b7;
+    left: 0;
+}
+
+.BorderB h3::after {
+    left: 75px;
+    content: '';
+    position: absolute;
+    width: 200px;
+    border-bottom: 10px solid #9d02b7;
+    bottom: -14px;
+}
+
+
+/* About Section */
+
+
+/* Skill Section */
+
+section#SkillSec {
+    padding: 90px 0px;
+    background: linear-gradient(#00000085, #00000085), linear-gradient(#00000085, #00000085), url(../Images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#SkillSec h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #ededed;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.progress {
+    width: 500px;
+    height: 13px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.progress-bar {
+    color: #fff!important;
+    background: #9d02b7 !important;
+}
+
+
+/* Skill Section */
+
+
+/* Services Section */
+
+section#Services {
+    background: #ededed;
+    width: 100%;
+    padding: 85px 0px;
+}
+
+section#Services h3 {
+    font-size: 30px;
+    position: relative;
+    width: 350px;
+    margin: auto;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #9d02b7;
+    text-transform: uppercase;
+}
+
+#Services p {
+    font-size: 18px;
+    margin-bottom: 65px;
+    margin-top: 35px;
+    color: #555;
+}
+
+.servicesWrapper {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.serviceBox {
+    width: 300px;
+    float: left;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+.serviceBox:last-child {
+    margin-right: 0px;
+}
+
+.serviceBox i {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 15px 0px;
+    color: #9d02b7;
+}
+
+.serviceBox h5 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: #9d02b7;
+}
+
+.serviceBox p {
+    font-size: 18px;
+    margin: 25px 0px !important;
+    color: #555;
+    text-align: center;
+}
+
+.serviceBox a {
+    padding: 6px 15px;
+    margin-bottom: 25px;
+}
+
+.serviceBox:hover {
+    background: #9d02b7;
+    color: #ededed;
+    transition: .3s linear;
+}
+
+.serviceBox:hover i {
+    color: #ededed;
+}
+
+.serviceBox:hover h5 {
+    color: #ededed;
+}
+
+.serviceBox:hover p {
+    color: #ededed !important;
+}
+
+.serviceBox:hover a {
+    background: transparent;
+    border: 2px solid #ededed;
+    color: #ededed;
+}
+
+
+/* Services Section */
+
+
+/* Portfolio Section */
+
+section#Portfolio {
+    padding: 90px 0px;
+    background: linear-gradient(#00000050, #00000050), linear-gradient(#00000050, #00000050), url(../Images/City_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#Portfolio h3 {
+    font-size: 30px;
+    position: relative;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #9d02b7;
+    letter-spacing: 2px;
+}
+
+section#Portfolio p {
+    color: #ededed;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+section#Portfolio img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .9;
+    margin-bottom: 60px;
+}
+
+
+/* Portfolio Section */
+
+
+/* Social Section */
+
+section#SocialSec {
+    background: #343a40;
+    padding: 90px 0px;
+}
+
+section#SocialSec img {
+    width: 175px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    /* border: 2px solid #9d02b7; */
+}
+
+section#SocialSec h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+#SocialSec h4 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section#SocialSec i {
+    font-size: 22px;
+    background: #9d02b7;
+    color: #ededed;
+    border: 2px solid #9d02b7;
+    padding: 10px;
+    border-radius: 50px;
+    transition: .7s;
+    margin-right: 10px;
+}
+
+#SocialSec i:hover {
+    background: #ededed;
+    color: #222;
+    border: 2px solid #ededed;
+}
+
+
+/* Social Section */
+
+
+/* Contact Section */
+
+section#ContactSec {
+    padding: 90px 0px;
+    background: linear-gradient(#00000040, #00000040), linear-gradient(#00000040, #00000040), url(../Images/Travel_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#ContactSec h3 {
+    position: relative;
+    width: 350px;
+    margin: auto;
+    font-size: 30px;
+    color: #9d02b7;
+    line-height: 53px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+}
+
+section#ContactSec b {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #9d02b7;
+    text-transform: uppercase;
+}
+
+section#ContactSec p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ededed;
+}
+
+section#ContactSec a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+section#ContactSec a:hover {
+    color: #9d02b7;
+}
+
+
+/* Contact Section */
+
+
+/* Footer Section */
+
+section#FooterSec {
+    padding: 90px 0px;
+    background: #343a40;
+    color: #ededed;
+}
+
+section#FooterSec h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #9d02b7;
+}
+
+section#FooterSec h6 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+section#FooterSec ul {
+    text-align: center;
+    list-style: none;
+}
+
+section#FooterSec ul li a {
+    color: #ededed;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+section#FooterSec ul li a:hover {
+    color: #9d02b7;
+}
+
+section#FooterSec h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #9d02b7;
+}
+
+section#FooterSec p {
+    margin-top: -10px;
+    font-size: 18px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+
+/* Footer Section */
+
+
+/* Copyright Section */
+
+section#Copyright {
+    padding: 20px 0px;
+    background: #222;
+    color: #ededed;
+}
+
+section#Copyright i {
+    font-size: 18px;
+}
+
+section#Copyright p {
+    font-size: 18px;
+}
+
+section#Copyright a {
+    text-decoration: none;
+    color: #9d02b7;
+}
+
+section#Copyright a:hover {
+    color: #ededed;
+}
+
+
+/* Copyright Section */

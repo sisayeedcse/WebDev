@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:998px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    a.nav-link:hover:before {
+        width: 0%;
+    }
+}
+
+@media(max-width:768px) {
+    header#Header {
+        width: 100%;
+    }
+    a.navbar-brand {
+        width: 100%;
+    }
+    ul.navbar-nav {
+        display: contents;
+    }
+    section#Banner {
+        width: 100%;
+        background-size: cover;
+    }
+    section#Banner img {
+        display: none;
+    }
+    header#AboutSec p {
+        text-align: justify;
+        padding: 0px;
+    }
+    header#AboutSec a {
+        margin-top: 20px;
+    }
+    .progress {
+        width: 100%;
+    }
+    .serviceBox {
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 400px;
+    }
+    section#FooterSec h3,
+    h6 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    section#Copyright p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

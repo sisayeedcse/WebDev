@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hire me</title>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="Images/SayeedLogo.png" type="image/x-icon">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="file:///D:/HTML/bootstrap-4.5.0/bootstrap-4.5.0/dist/css/bootstrap.min.css">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="file:///D:/HTML/fontawesome-free-5.13.1-web/css/all.css" />
+</head>
+<body>
+<section id="hireSec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hireContainer">
+                    <h1>THANK YOU FOR YOUR INTREST!!</h1>
+                <input required type="email" placeholder="Enter your Email"><br>
+                <input required type="password" placeholder="Enter Password"><br>
+                <textarea col="5" rows="5" placeholder="Enter your project Description"></textarea><br>
+                <a href="#" type="submit" id="hSubmit" class=" btn btn-primary">Submit</a>
+                </div>
+                <div class="hPop hPop_2">
+                    <h1>It's Processing......</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript">
+const hCon = document.querySelector('.hireContainer');
+const popUp = document.querySelector('.hPop_2');
+const hSubmission = document.querySelector('#hSubmit');
+
+
+    hSubmission.addEventListener('click', ()=> {
+    hCon.style.display = "none";
+    popUp.style.display = "block";
+});
+
+
+
+
+
+</script>
+</body>
+</html>
