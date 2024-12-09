@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+/* Header CSS  */
+header#headSec {
+    background: #f1ebe7;
+    padding: 17px;
+    border-bottom: 2px solid #f2e1cf;
+}
+#headSec a.nav-link {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: 600;
+    padding: 20px;
+    margin-left: 15px;
+    color: #181818;
+}
+#headSec a.nav-link:hover{
+    color: #ff8a00;
+    transition: .3s ease;
+}
+#headSec .btn-primary {
+    font-size: 17px;
+    background: #ff8a00;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#headSec .btn-primary:hover{
+    background-color: #181818;
+    transition: .3s ease;
+}
+
+/* Main Section CSS  */
+section#mainSec {
+    padding: 140px 0px 80px 0px;
+    background: #f1ebe7;
+}
+.mainCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+section#mainSec img{
+    width: 550px;
+}
+.mainRight {
+    text-align: center;
+}
+.sayeedText{
+    color: #181818;
+}
+section#mainSec p {
+    font-size: 22px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+
+section#mainSec h1 {
+    color: #ff8a00;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+section#mainSec h3 {
+    margin-left: 10px;
+    font-size: 28px;
+    margin-top: -10px;
+}
+.mainDesc{
+    margin-top: 25px;
+}
+section#mainSec .booking {
+    background: #181818;
+    border: 2px solid #181818;
+    padding: 15px 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+section#mainSec .booking:hover{
+    background-color: #ff8a00;
+    color: #fff;
+    border: 2px solid #ff8a00;
+    transition: .3s ease;
+}
+section#mainSec .dwnldCv {
+    border: 2px solid #ff8a00;
+    color: #ff8a00;
+    background: none;
+    padding: 15px 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+}
+section#mainSec .dwnldCv:hover{
+    border: 2px solid #181818;
+    background-color: #181818;
+    color: #fff;
+    transition: .3s ease;
+}
+.animaterPara{
+    margin-top: -15px;
+    font-weight: 600;
+}
+
+.Animated {
+    font-weight: 500;
+    color: #ff8a00;
+}
+
+span.Animated:before {
+    content: '';
+    animation: Animated infinite 5s;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@keyframes Animated {
+    0% {
+        content: 'Freelancer';
+    }
+    20% {
+        content: 'Web Designer';
+    }
+    40% {
+        content: 'Web Developer';
+    }
+    60% {
+        content: 'WordPress Expert';
+    }
+    80% {
+        content: 'Web Designer';
+    }
+    100% {
+        content: 'Freelancer';
+    }
+}
+
+/* Partner Section  */
+section#partnerSec {
+    background: #ff8a00;
+    text-align: center;
+    overflow: hidden;
+}
+
+.partnerImg {
+    width: 12%;
+    margin-right: 60px;
+    padding: 50px 0px;
+}
+.partnerImg2 {
+    width: 8%;
+    margin-right: 30px;
+}
+.partnerIcon{
+    width: 3% !important;
+    margin-right: 60px;
+}
+
+.partnerMark{
+    animation: marquee 30s linear infinite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@keyframes marquee { 
+    0% { 
+        transform: translateX(100%); 
+    } 
+
+    100% { 
+        transform: translateX(-100%); 
+    } 
+} 
+/* About Section  */
+section#aboutSec {
+    padding: 80px 0px;
+    background: #f1ebe7;
+}
+
+.aboutSec {
+    display: flex;
+    align-items: center;
+}
+
+.aboutSec img {
+    width: 400px;
+    border-radius: 34px;
+}
+
+.aboutSec h1 {
+    color: #181818;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    text-decoration: underline;
+    margin: 25px 0px;
+}
+
+.aboutSec p {
+    color: #181818;
+    font-size: 20px;
+}
+
+.aboutLeft {
+    text-align: center;
+}
+.aboutSec .btn-primary {
+    border: 2px solid #181818;
+    color: #fff;
+    background: #181818;
+    padding: 15px 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.aboutSec .btn-primary:hover{
+    background-color: #ff8a00;
+    border: 2px solid #ff8a00;
+    color: #fff;
+    transition: .3s ease;
+}
+/* Education CSS  */
+section#educationSec {
+    padding: 80px 0px;
+    background: #0e0e0e;
+    color: #fff;
+    text-align: center;
+}
+
+.eduCon {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    background: #1a1a1a;
+    padding: 30px;
+}
+
+.eduTitle h4 {
+    font-weight: 700;
+    color: #ff8a00;
+    font-size: 36px;
+    margin: 42px 0px;
+    text-align: center;
+}
+
+.eduBox {
+    text-align: left;
+    padding: 15px 50px;
+    margin-bottom: 17px;
+    background: #262626;
+    transition: all .3s linear;
+}
+.eduBox:hover{
+    background-color: #ff8a00;
+    transform: scale(1.02);
+}
+.eduBox:hover h6{
+    color: #fff;
+}
+#educationSec button{
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    padding: 15px 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+}
+#educationSec button:hover{
+    border: 2px solid #ff8a00;
+    background-color: #ff8a00;
+    color: #fff;
+    transition: .3s ease;
+}
+.eduBox h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 17px 0px;
+}
+
+.eduBox h6 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #ff8a00;
+}
+
+.eduBox p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+/* Skill Section  */
+section#skillSec{
+    background-color: #181818;
+    padding: 85px 0px;
+    color: #fff;
+}
+.skillTitle {
+    text-align: center;
+}
+.skillTitle h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    margin: 30px 0px 25px 0px;
+    text-decoration: underline;
+}
+section#skillSec img{
+    width: 550px;
+}
+.skillCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skillLeft {
+    width: 50%;
+}
+
+.skillRight {
+    width: 50%;
+    text-align: end;
+}
+.skillLeft h4 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.skillLeft .progress-bar {
+    background-color: #ff8a00 !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skillLeft .progress {
+    height: 25px !important;
+}
+/* Project CSS  */section#projectSec {
+    padding: 80px 0px;
+}
+
+.proSec {
+    display: flex;
+}
+
+.proSec2 {
+    display: flex;
+    margin-top: 50px;
+}
+.proBox img {
+    width: 355px;
+    border-radius: 17px;
+    margin-bottom: 22px;
+    transition: all .28s linear;
+}
+.proBox img:hover{
+    transform: scale(1.02);
+}
+.proboxinside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -110px;
+}
+
+.proboxinside h4 {
+    font-size: 17px;
+    color: #ff8a00;
+}
+
+.proboxinside i {
+    color: #ff8a00;
+    margin-right: -110px;
+}
+
+.proBox h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.proBox {
+    margin-right: 110px;
+}
+section#projectSec h2 {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 47px;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+section#projectSec .btn-primary {
+    border: 2px solid #181818;
+    color: #fff;
+    background: #181818;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+section#projectSec .btn-primary:hover{
+    background-color: #ff8a00;
+    border: 2px solid #ff8a00;
+    color: #fff;
+    transition: .3s ease;
+}
+
+/* Services CSS  */
+section#serviceSec {
+    padding: 85px 0px;
+    background: #f1ebe7;
+}
+
+.serTitle {
+    text-align: center;
+}
+
+.serTitle h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    margin: 30px 0px 45px 0px;
+    text-decoration: underline;
+}
+.serCardbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serCard {
+    padding: 50px;
+    background: #fff;
+    color: #181818;
+    margin-right: 25px;
+    transition: all .18s linear;
+    border-radius: 20px;
+}
+.serCard:hover{
+    transform: scale(1.02);
+}
+
+.serCard i {
+    font-size: 65px;
+    margin: 25px 0px 15px 0px;
+    color: #181818;
+}
+
+.serCard h3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px;
+}
+
+.serCard p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #818181c7;
+}
+.serCardbox2{
+    margin-top: 25px;
+}
+
+/* Contact Section  */
+.sliderContact {
+    background: #181818;
+    color: #ff8a00;
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+    padding: 80px 0px 40px 0px;
+}
+section#contactSec {
+    color: #fff;
+    background: #181818;
+    padding-bottom: 150px;
+}
+.contactCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conleft span {
+    color: #ff8a00;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.conleft h1 {
+    font-weight: 200;
+    font-size: 65px;
+}
+
+.conleft p {
+    font-size: 18px;
+    margin: 20px 0px 50px 0px;
+}
+
+.conleft .number {
+    color: #ff8a00;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.conSocial a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.conSocial a:hover{
+    color: #ff8a00;
+    transition: .3s ease;
+}
+.conSocial {
+    margin: 16px 0px;
+}
+.conForm input {
+    width: 100%;
+    background: none;
+    border: 2px solid #ff8a00;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    color: #fff;
+}
+.nameMail {
+    display: flex;
+}
+.nameMail input {
+    width: 49%;
+}
+#formName {
+    margin-right: 3%;
+}
+.conForm textarea {
+    width: 100%;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid #ff8a00;
+    margin-top: 15px;
+    color: #fff;
+    padding: 15px;    
+}
+
+.conForm .btn-primary {
+    font-size: 19px;
+    padding: 15px 35px;
+    width: 100%;
+    border-radius: 15px;
+    background: #ff8a00;
+    border: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.conForm .btn-primary:hover{
+    background-color: #fff;
+    color: #181818;
+    transition: .3s ease;
+}
+/* Footer CSS  */
+footer#footerSec {
+    background: #181818;
+    padding: 30px 0px;
+    color: #fff;
+    border-top: 1px solid #f1ebe7;
+}
+
+.footerCon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLeft {
+    width: 33.33%;
+}
+
+.footerMid {
+    width: 33.33%;
+    font-size: 17px;
+    text-align: center;
+}
+
+.footerRight {
+    text-align: end;
+    width: 33%;
+}
+
+.footerLeft img {
+    width: 70%;
+}
+
+.footerRight a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    padding: 11px;
+} 
+

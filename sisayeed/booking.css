@@ -1,0 +1,27 @@
+section#booking {
+    padding: 100px 0px;
+    background: #181818;
+    color: #fff;
+}
+.textBoxbook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookBox h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+}
+.bookBox i {
+    margin-bottom: 30px;
+    background: #ff8a00;
+    padding: 20px;
+    border-radius: 13px;
+    font-size: 50px;
+    margin-right: 25px;
+}
+.formBook{
+    width: 890px;
+    margin: auto;
+}

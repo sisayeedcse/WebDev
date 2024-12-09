@@ -1,0 +1,44 @@
+/* Thank You Page CSS  */
+
+section#thanks {
+    height: 80vh;
+    background: #181818;
+    color: #fff;
+}
+.thanksBox {
+    text-align: center;
+    padding-top: 20vh;
+}
+.thanksBox i {
+    margin-bottom: 30px;
+    background: #ff8a00;
+    padding: 30px;
+    border-radius: 13px;
+    font-size: 70px;
+}
+
+.thanksBox h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.thanksBox p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0px;
+}
+.thanksBox button {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 12px;
+    margin: 20px 0px;
+    background: #ff8a00;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.thanksBox button:hover{
+    background-color: #fff;
+    color: #181818;
+}
