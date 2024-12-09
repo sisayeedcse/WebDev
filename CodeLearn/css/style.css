@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navigation Bar */
+
+section#Header {
+    background: #FCFCFC;
+}
+
+section#Header img {
+    width: 175px;
+    height: auto;
+    margin-left: 15px;
+}
+
+section#Header a.nav-link {
+    margin: auto;
+    font-weight: 600;
+    font-size: 17px;
+    color: #000;
+    padding: 20px;
+}
+
+section#Header .navBtn a.btn {
+    padding: 9px 25px;
+    margin-right: 40px;
+    border-radius: 85px;
+    background: #FD382A;
+    border: 2px solid #DBB27321;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+section#Header .navBtn a.btn i {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+section#Header .navBtn a.btn:hover {
+    background: #DB2721;
+}
+
+section#Header a.nav-link:hover {
+    color: #303669;
+}
+
+
+/* Navigation Bar */
+
+
+/* Banner Section */
+
+section#BannerSec {
+    background: #FCFCFC;
+    padding: 100px 0px;
+    position: relative;
+}
+
+.BannerLeft {
+    position: absolute;
+    top: 45px;
+}
+
+.BannerLeft h1 {
+    font-weight: 800;
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #191847;
+}
+
+.BannerLeft h6 {
+    font-size: 23px;
+    margin: 20px 0px;
+}
+
+.BannerLeft a.btn {
+    font-weight: 600;
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.BannerLeft a.btn i {
+    font-weight: 600;
+}
+
+.BannerLeft a.btn.BannerBtn_1 {
+    background-color: #FD382A;
+    border: 2px solid #FD382A;
+}
+
+.BannerLeft a.btn.BannerBtn_1:hover {
+    background-color: transparent;
+    color: #558b95;
+    border: 2px solid #558b95;
+}
+
+.BannerLeft a.btn.BannerBtn_2 {
+    background-color: transparent;
+    color: #558b95;
+    border: 2px solid #558b95;
+}
+
+.BannerLeft a.btn.BannerBtn_2:hover {
+    background-color: #DB2721;
+    border: 2px solid #DB2721;
+    color: #fff;
+}
+
+
+/* Banner Section  */
+
+
+/* Courses Section  */
+
+section#CourseSec {
+    position: relative;
+    padding: 30px 0px;
+    background: #F5F6F7;
+}
+
+section#CourseSec img {
+    width: 450px;
+}
+
+section#CourseSec .CoursesRight {
+    position: absolute;
+    top: 125px;
+}
+
+.CoursesRight h6 {
+    margin-bottom: -2px;
+    font-size: 19px;
+    color: #737373;
+}
+
+section#CourseSec h1 {
+    font-size: 51px;
+    font-weight: 800;
+    color: #191847;
+    padding-right: 90px;
+}
+
+.CoursesRight h5 {
+    color: #737373;
+    line-height: 20px;
+    font-size: 19px;
+}
+
+.CoursesRight a.btn {
+    background: #fd382a;
+    padding: 9px 20px;
+    margin: 25px 0px;
+    border: 2px solid #fd382a;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.CoursesRight a.btn:hover {
+    background-color: transparent;
+    color: #558b95;
+    border: 2px solid #558b95;
+}
+
+
+/* Courses Section  */
+
+
+/* Tutors section  */
+
+section#TutorSec {
+    padding: 80px;
+    background: #fcfcfc;
+}
+
+section#TutorSec h1 {
+    margin-bottom: 14px;
+    margin-top: 50px;
+    color: #191847;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+section#TutorSec h6 {
+    font-size: 19px;
+    color: #7b7b7b;
+    margin-bottom: 100px;
+}
+
+.TutorsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TutorsWrapper img {
+    height: 100px;
+}
+
+.TutImg {
+    margin: auto;
+    border-radius: 580px;
+    background: #c1dee2;
+    width: 100px;
+}
+
+.ImgBox {
+    margin-right: 30px;
+}
+
+.ImgBox h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 6px;
+    color: #221c4D;
+}
+
+
+/* Tutors section  */
+
+
+/* Pricing Section  */
+
+section#PricingSec {
+    padding: 50px 0px;
+    background: #ffffff;
+    color: #000;
+    position: relative;
+}
+
+section#PricingSec h1 {
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 20px;
+    color: #191847;
+}
+
+section#PricingSec h6 {
+    color: #949494;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    padding: 0px 196px;
+}
+
+.PricingWrapper {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PricingBox_1 {
+    border-radius: 15px 0px 0px 15px;
+    background: #f8f8f8;
+    padding: 40px 80px;
+}
+
+.PricingBox_1 h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #858585;
+    margin-bottom: 0px;
+}
+
+.PricingBox_1 h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #191847;
+}
+
+.PricingBox_1 h5 {
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.PricingBox_1 p {
+    font-weight: 400;
+    color: #565656;
+    font-size: 16px;
+}
+
+.PricingBox_1 h4 {
+    font-size: 16px;
+    color: #9c9b9b;
+    text-decoration: line-through;
+    margin-bottom: 30px;
+    margin-top: -14px;
+}
+
+.PricingBox_1 a.btn {
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    color: #558b95;
+    background: transparent;
+    padding: 8px 35px;
+    border: 2px solid #558b95;
+}
+
+.PricingBox_1 a.btn:hover {
+    color: #060606;
+    border: 2px solid #000;
+}
+
+.PricingBox_2 {
+    background: #e9edf0;
+    box-shadow: 5px 5px 12px -9px #000;
+    padding: 75px 90px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.PricingBox_2 h2 {
+    margin-bottom: 1px;
+    font-size: 20px;
+    color: #928585;
+    margin-top: -15px;
+    font-weight: 500;
+}
+
+.PricingBox_2 h3 {
+    font-weight: 900;
+    color: #191847;
+    font-size: 45px;
+}
+
+.PricingBox_2 h5 {
+    font-size: 18px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.PricingBox_2 p {
+    color: #424242;
+}
+
+.PricingBox_2 h4 {
+    margin-bottom: 60px;
+    color: #424242;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.PricingBox_2 a.btn {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 8px 35px;
+    border-radius: 50px;
+    background: #ff4133;
+    border: 2px solid #ff4133;
+}
+
+.PricingBox_2 a.btn:hover {
+    border: 2px solid #d64137;
+    background: #de493e;
+}
+
+.PricingBox_3 {
+    border-radius: 0 15px 15px 0px;
+    box-shadow: 0px 0px 13px -8px #000;
+    background: #f8f8f8;
+    padding: 40px 80px;
+}
+
+.PricingBox_3 h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #858585;
+    margin-bottom: 0px;
+}
+
+.PricingBox_3 h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #191847;
+}
+
+.PricingBox_3 h5 {
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.PricingBox_3 p {
+    font-weight: 400;
+    color: #565656;
+    font-size: 16px;
+}
+
+.PricingBox_3 h4 {
+    font-size: 16px;
+    color: #9c9b9b;
+    margin-bottom: 50px;
+    margin-top: -14px;
+}
+
+.PricingBox_3 a.btn {
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    color: #558b95;
+    background: transparent;
+    padding: 8px 35px;
+    border: 2px solid #558b95;
+}
+
+.PricingBox_3 a.btn:hover {
+    color: #060606;
+    border: 2px solid #000;
+}
+
+
+/* Pricing Section  */
+
+.PricingBox_2:hover {
+    box-shadow: 4px 9px 17px -10px #000;
+}
+
+.PricingBox_3:hover {
+    box-shadow: 4px 9px 17px -10px #000;
+}
+
+.BeforePopu {
+    transform: skew(12deg, -45deg);
+    content: '';
+    position: absolute;
+    background: #558b95;
+    width: 190px;
+    height: 50px;
+    top: 33px;
+    left: -53px;
+}
+
+.AfterPopu {
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 63px;
+    top: -63px;
+    left: 61px;
+    z-index: 1;
+}
+
+.AfterPopu:before {
+    left: -60px;
+    position: absolute;
+    content: 'POPULAR';
+    color: #fff;
+    top: 104px;
+    font-size: 18px;
+    font-weight: 600;
+    transform: rotate(-45deg);
+}
+
+.AfterPopu:after {
+    left: -165px;
+    content: '';
+    position: absolute;
+    top: 127px;
+    width: 100px;
+    height: 114px;
+    background: #f8f8f8;
+}
+
+
+/* Pricing Section  */
+
+
+/* FAQs Section  */
+
+section#FaqSec {
+    background: #fcfcfc;
+    padding: 50px 0px;
+    position: relative;
+}
+
+section#FaqSec img {
+    width: 450px;
+    right: 0;
+    position: absolute;
+}
+
+.FaqHead h4 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #808080;
+}
+
+.FaqHead h1 {
+    font-weight: 900;
+    color: #191847;
+    font-size: 50px;
+}
+
+.FaqHead p {
+    color: #464646;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.card {
+    border-radius: 0px 20px 20px 0px;
+    margin-bottom: 20px;
+    background: #FF4133 !important;
+}
+
+.card button {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.card-body {
+    background: #fcfcfc !important;
+    font-size: 18px;
+}
+
+.card {
+    border: none !important;
+}
+
+
+/* FAQs Section  */
+
+
+/* Reviews Section  */
+
+section#ReviewSec {
+    padding: 50px 0px;
+    position: relative;
+    background: #f5f6f7;
+}
+
+section#ReviewSec img {
+    width: 450px;
+}
+
+section#ReviewSec li {
+    height: 0px;
+    width: 20px;
+    background: #ff392b !important;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+section#ReviewSec ol {
+    top: 295px !important;
+    left: -430px !important;
+}
+
+section#ReviewSec h4 {
+    font-size: 23px;
+    color: #737373;
+    margin-bottom: 0;
+}
+
+section#ReviewSec h1 {
+    color: #191847;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+section#ReviewSec p {
+    font-size: 17px;
+    text-align: left;
+    color: #4c4c4c;
+}
+
+section#ReviewSec a.btn {
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid #f73f31;
+    padding: 7px 25px;
+    border-radius: 50px;
+    background: #f73f31;
+}
+
+
+/* Reviews Section  */
+
+
+/* App Section  */
+
+section#AppSec {
+    position: relative;
+    padding: 80px 0px;
+    overflow: hidden;
+    background: #ECEBFC;
+}
+
+section#AppSec img {
+    position: absolute;
+    width: 450px;
+    right: 0;
+}
+
+section#AppSec h4 {
+    color: #8D8E9F;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+section#AppSec h1 {
+    font-weight: 900;
+    font-size: 45px;
+    color: #191847;
+}
+
+section#AppSec p {
+    color: #484D52;
+    font-size: 17px;
+}
+
+section#AppSec a.btn {
+    padding: 7px 25px;
+    border-radius: 50px;
+    margin-right: 20px;
+    background: #FF4133;
+    font-family: 'Montserrat';
+    border: 2px solid #FF4133;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a.AppBtn_2 {
+    background: transparent !important;
+    color: #558b95;
+    border: 2px solid #558b95 !important;
+}
+
+a.AppBtn_2:hover {
+    color: #558b95;
+}
+
+
+/* App Section  */
+
+
+/* Footer section  */
+
+footer#Footer {
+    padding-top: 50px;
+    background: #FFFFFF;
+    color: #000;
+}
+
+.footerBox {
+    width: 250px;
+}
+
+.footerBox img {
+    width: 130px;
+    margin-bottom: 25px;
+}
+
+.footerBox p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #5d5d5d;
+}
+
+.footerBox h3 {
+    margin-bottom: 27px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 4px;
+    color: #191847;
+}
+
+.footerBox i {
+    font-size: 26px;
+    color: #191847;
+    margin-right: 20px;
+}
+
+
+/* Footer section  */
+
+
+/* Copyright section  */
+
+section#CopyrightSec {
+    padding: 30px 0px;
+    font-size: 17px;
+    color: #6365B2;
+}
+
+section#CopyrightSec i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section#CopyrightSec a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #191847;
+    text-decoration: none;
+}
+
+
+/* Copyright section  */
