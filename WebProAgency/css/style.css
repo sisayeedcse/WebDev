@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* header */
+
+header#Header {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+a.navbar-brand img {
+    width: 150px;
+}
+
+.HeaderSocial i {
+    font-size: 15px;
+    margin-right: 15px;
+    color: #171717;
+}
+
+.HeaderSocial i:hover {
+    color: #f56231;
+}
+
+a.nav-link {
+    padding: 20px;
+    color: #171717;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+a.nav-link:hover {
+    color: #f56232;
+}
+
+
+/* Banner */
+
+#BannerSec {
+    min-height: 550px;
+    background-image: linear-gradient(#00000020, #00000020), linear-gradient(#00000020, #00000020), url(../Images/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+}
+
+.BannerWapper {
+    position: absolute;
+    top: 110px;
+    left: -50px;
+}
+
+.BannerWapper h2 {
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 75px;
+    line-height: 57px;
+}
+
+.BannerWapper p {
+    color: #ffffff;
+    width: 450px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.BannerWapper a {
+    font-weight: 600;
+    background: #f56131;
+    color: #ffffff;
+    font-size: 14px;
+    border: 2px solid #f56131;
+    padding: 5px 13px;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.BannerWapper a:hover {
+    background: transparent;
+    border: 2px solid #f56131;
+}
+
+
+/* About */
+
+section#AboutSec {
+    padding: 20px 0px;
+    background: #2f2339;
+}
+
+section#AboutSec img {
+    width: 550px;
+}
+
+section#AboutSec h2 {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section#AboutSec p {
+    text-align: left;
+    color: #ffffff;
+    line-height: 23px;
+    margin: 25px 0px;
+}
+
+section#AboutSec a {
+    text-transform: uppercase;
+    background: #f56321;
+    border: 2px solid #f56321;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 0px;
+    font-weight: 600;
+}
+
+section#AboutSec a:hover {
+    background: transparent;
+    border: 2px solid #f56321;
+}
+
+
+/* About */
+
+
+/* Feature */
+
+section#FeatureSec {
+    padding: 80px 0px;
+    background: #ffffff;
+}
+
+section#FeatureSec h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+    margin-left: 75px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+section#FeatureSec a {
+    background: #2f2339;
+    border: 2px solid #2f2339;
+    border-radius: 0px;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-left: 75px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+section#FeatureSec a:hover {
+    color: #2f2339;
+    background: transparent;
+    border: 2px solid #2f2339;
+}
+
+.FeatureWrapper {
+    padding: 35px;
+    width: 335px;
+    background: #ee5d30;
+}
+
+.FeatureWrapper i {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    padding: 18px;
+    margin-left: 65px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.FeatureWrapper h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 65px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.FeaturePara {
+    width: 250px;
+    margin-top: -50px;
+}
+
+.FeaturePara p {
+    color: #2f2339;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Feature */
+
+
+/* Ipad APP */
+
+section#IpadApp {
+    padding: 20px 0px;
+}
+
+section#IpadApp img {
+    width: 310px;
+    margin-top: 74px;
+    margin-left: -30px;
+}
+
+.IpadWrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #2f2339;
+    color: #fff;
+}
+
+.IpadHeading {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.IpadHeading h2 {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.IpadContent {
+    margin-top: 164px;
+    display: flex;
+    margin-left: 100px;
+    width: 250px;
+    flex-direction: column;
+    float: left;
+}
+
+.IpadContent_1 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 250px;
+    flex-direction: column;
+    margin-bottom: 45px;
+    float: left;
+}
+
+.IpadContent_1 h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.IpadContent h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+/* Ipad APP */
+
+
+/* Apple APP */
+
+section#AppleApp {
+    margin-top: 140px;
+    background: #ee5d30;
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+
+section#AppleApp h2 {
+    top: 50px;
+    left: 350px;
+    position: absolute;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section#AppleApp img {
+    position: absolute;
+    top: -40px;
+    left: 580px;
+}
+
+
+/* Apple APP */
+
+
+/* Iphone App  */
+
+section#IphoneApp {
+    padding: 90px 0px;
+}
+
+section#IphoneApp img {
+    width: 265px;
+    margin-top: 15px;
+    margin-left: 222px;
+}
+
+.IphoneWrapper {
+    background: #2f2339;
+    padding: 50px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.IphhoneHeader h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px 70px;
+}
+
+.IphoneContent {
+    width: 470px;
+    margin: 25px 70px;
+}
+
+.IphoneContent h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.IphoneContent p {
+    font-size: 15px;
+    font-weight: 600;
+    width: 380px;
+    margin-top: 20px;
+    color: #ededed;
+}
+
+
+/* Iphone App  */
+
+
+/* Contact */
+
+section#ContactSec {
+    background: linear-gradient(#69537f9c, #3a2947a1), linear-gradient(#4b385a9c, #2706417a), url(../Images/Img_4.jpg);
+    padding: 50px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#ContactSec h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+section#ContactSec h4 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+section#ContactSec p {
+    color: #ededed;
+    font-size: 15px;
+    margin-top: 35px !important;
+    width: 800px;
+    margin: auto;
+}
+
+
+/* Contact */
+
+
+/* Footer  */
+
+section#FooterSec {
+    background: #ffffff;
+    padding: 50px 0px;
+}
+
+section#FooterSec h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+section#FooterSec i {
+    margin-right: 50px;
+    font-size: 30px;
+    float: left;
+    padding: 15px;
+    background: #f56321;
+    border-radius: 50px;
+}
+
+.Address h5 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-left: 55px;
+}
+
+#FooterSec a {
+    text-decoration: none;
+    color: #a6a7a8;
+}
+
+.Address {
+    margin: 55px 0px;
+}
+
+.Address p {
+    margin-left: 53px;
+    color: #a6a7a8;
+}
+
+section#FooterSec h6 {
+    color: #a6a7a8;
+}
+
+section#FooterSec input {
+    margin-bottom: 25px;
+    border: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    width: 300px;
+    outline: none;
+    border-right: none;
+}
+
+section#FooterSec textarea {
+    width: 300px;
+    border: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    margin-right: 120px;
+}
+
+section#FooterSec a.btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 600;
+    background: #f56321;
+    border: 2px solid #f56321;
+    margin: 20px 0px;
+}
+
+section#FooterSec a.btn:hover {
+    background: transparent;
+    border: 2px solid #f56321;
+    color: #f56321;
+}
+
+
+/* Footer  */
+
+
+/* Copyright Section  */
+
+section#Copyright {
+    color: #ffffff;
+    padding: 20px 0px;
+    background: #2f2339;
+}
+
+section#Copyright h5 {
+    font-size: 18px;
+}
+
+section#Copyright a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+section#Copyright a:hover {
+    color: #f56321;
+}
+
+section#Copyright h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* Copyright Section  */
