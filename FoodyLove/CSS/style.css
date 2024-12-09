@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* HEader */
+
+.headerIcon i {
+    float: left;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 2px;
+    color: #e7a331;
+}
+
+.HeaderCont p {
+    float: left;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+.container_1 {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.headerSocial i {
+    color: #e7a331;
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.headerSocial {
+    float: right;
+}
+
+.headerSocial i:last-child {
+    margin-right: 20px;
+}
+
+.Hnavigation {
+    width: 100%;
+    background: #000000;
+}
+
+a.navbar-brand {
+    color: #e7a331;
+}
+
+a.navbar-brand h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a.navbar-brand h6 {
+    margin-top: -14px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a.nav-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 14px;
+}
+
+a.nav-link:hover {
+    color: #e7a331;
+}
+
+#Header .btn {
+    padding: 7px 8px;
+    font-size: 10px;
+    font-weight: 800;
+    border: 2px solid #e7a311;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: #e7a331;
+}
+
+#Header a.btn:hover {
+    background: transparent;
+    border: 2px solid #e7a311;
+}
+
+
+/* HEader */
+
+
+/* Banner  */
+
+section#Banner {
+    padding: 100px 0px;
+    min-height: 600px;
+    background: url(../Images/Backgorund_6.jpg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#Banner h1 {
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 90px;
+}
+
+section#Banner p {
+    margin: 25px 215px;
+    color: #ffffff;
+}
+
+section#Banner a {
+    background: #e7a331;
+    color: #fff;
+    border: 2px solid #e7a311;
+    border-radius: 9px;
+}
+
+section#Banner a:hover {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #e7a311;
+}
+
+
+/* Banner  */
+
+
+/* About  */
+
+section#AboutSec {
+    padding: 50px 0px;
+    background: url(../Images/About_Background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+section#AboutSec img {
+    width: 470px;
+}
+
+section#AboutSec h3 {
+    font-size: 30px;
+    font-family: auto;
+    margin-left: -100px;
+}
+
+section#AboutSec p {
+    text-align: start;
+    margin-left: -100px;
+    font-family: auto;
+    color: #858585;
+    padding-right: 150px;
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+
+/* About  */
+
+
+/* Special Recipes */
+
+section#SpecialRecipes {
+    padding: 80px 0px;
+    background: url(../Images/Backgorund_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.textBox {
+    width: 420px;
+    background: #fff;
+    padding: 25px;
+    top: 115px;
+    position: absolute;
+    left: 200px;
+}
+
+.textBox h2 {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: cursive;
+    color: #000;
+    margin-bottom: -4px;
+    margin-top: 20px;
+}
+
+.textBox h3 {
+    font-size: 42px;
+    font-weight: 100;
+    font-family: auto;
+    margin-bottom: 22px;
+}
+
+.textBox p {
+    margin-bottom: 25px;
+    font-size: 17px;
+    text-align: start;
+    font-family: auto;
+}
+
+.textBox a {
+    padding: 4px 20px;
+    font-size: 15px;
+    font-family: auto;
+    color: #ffffff;
+    background: #e7a331;
+    border: 2px solid #e7a311;
+    border-radius: 8px;
+}
+
+.textBox a:hover {
+    color: #e7a311;
+    background: transparent;
+    border: 2px solid #e7a311;
+}
+
+.SpecialRImage img {
+    width: 638px;
+    height: 430px;
+    float: right;
+    margin-right: 65px;
+}
+
+
+/* Special Recipes */
+
+
+/* Delightful Experience */
+
+
+/* Delightful Experience */
