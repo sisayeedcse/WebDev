@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+#Header {
+    width: 100%;
+}
+
+.HeaderSecCon {
+    padding-top: 20px;
+    background: #e3e3e3;
+}
+
+a.navbar-brand {
+    color: #ff5200;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+a.navbar-brand:hover {
+    color: #ff5200;
+}
+
+a.nav-link {
+    color: #343a40;
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+a.nav-link:hover {
+    color: #ff5200;
+}
+
+i.HeaderI_1 {
+    color: #ff5200;
+    font-size: 18px;
+    float: left;
+}
+
+.HeaderCon {
+    width: 320px;
+    float: left;
+}
+
+.HeaderCon b {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.HeaderCon p {
+    font-size: 15px;
+    color: #ff5200;
+}
+
+.HeaderCon a {
+    text-decoration: none !important;
+    color: #8b8b8b;
+    margin-left: 10px;
+}
+
+.HeaderCon a:hover {
+    color: #ff5200;
+}
+
+.HeaderIcon_1 {
+    float: right;
+    padding-right: 50px;
+}
+
+i.HeaderIcon_2 {
+    font-size: 18px;
+    margin-left: 15px;
+    color: #ff5200;
+}
+
+i.HeaderIcon_2:hover {
+    color: #343a40;
+}
+
+
+/* Header */
+
+
+/* Banner Section */
+
+#BannerSec {
+    position: relative;
+    margin: auto;
+    min-height: 550px;
+    background-image: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075), url(../Images/Img_6.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.BannerDiv {
+    position: absolute;
+    top: 175px;
+    left: 30px;
+}
+
+#BannerSec h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff5200;
+    margin-bottom: 25px;
+}
+
+#BannerSec p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+    color: #ddd;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+a.AllButton {
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    background: #ff5200;
+    border: 2px solid #ff5200;
+}
+
+a.AllButton:hover {
+    color: #ff5200;
+    border: 2px solid #ff5200;
+    background: transparent;
+}
+
+
+/* Banner Section */
+
+
+/* About Section */
+
+#AboutSec {
+    background: #ededed;
+    padding: 8% 0%;
+}
+
+#AboutSec h3 {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    color: #ff5200;
+}
+
+#AboutSec p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+#AboutSec a {
+    margin-left: 35px;
+}
+
+#AboutSec img {
+    border-radius: 40px 80px 40px 80px;
+    position: relative;
+}
+
+.overlay {
+    border-radius: 40px 80px 40px 80px;
+    position: absolute;
+    width: 540px;
+    height: 360px;
+    background: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075);
+    top: 0;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* About Section */
+
+
+/* Service Section  */
+
+#ServiceSec {
+    background: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075), url(../Images/Img_5.jpg);
+    padding: 150px 0px;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.ServiceBoxWrapper {
+    border-radius: 6px;
+    text-align: center;
+    width: 260px;
+    padding: 15px;
+    float: left;
+    margin-right: 35px;
+    display: block;
+    background: #fff;
+    color: #222;
+    border: 1px solid #ff5200;
+}
+
+.Sicon {
+    margin: 25px 0px;
+    color: #ff5200;
+    font-size: 40px;
+}
+
+.Stitle {
+    margin: 30px 0px;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    color: #ff5000;
+}
+
+.Stitle h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.SDescription {
+    text-align: center;
+    padding: 0px 15px;
+    margin: 30px 0px;
+}
+
+.SDescription p {
+    color: #5c5c5c;
+    font-size: 17px;
+}
+
+.Slink {
+    margin: 30px 0px;
+}
+
+.Slink a {
+    font-size: 18px;
+    border: 1px solid #ff5200;
+    color: #ff5200;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#ServiceSec a {
+    text-decoration: none;
+}
+
+.ServiceContainer {
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 104.5px;
+}
+
+.ServiceBoxWrapper:hover {
+    background: #ff5200;
+    transition: 0.5s all ease;
+}
+
+.ServiceBoxWrapper:hover i {
+    color: #fff;
+}
+
+.ServiceBoxWrapper:hover h3 {
+    color: #fff;
+}
+
+.ServiceBoxWrapper:hover a {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.ServiceBoxWrapper:hover p {
+    color: #ededed;
+}
+
+
+/* Service Section  */
+
+
+/* Why Choose Sec */
+
+#WhyChooseSec {
+    background: #ededed;
+    padding: 100px 0px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+
+#WhyChooseSec img {
+    width: 540px;
+    height: 440px;
+    border: 2px solid #ff5200;
+}
+
+#WhyChooseSec h4 {
+    color: #ff5200;
+    margin: 20px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#WhyChooseSec p {
+    color: #767676;
+    font-size: 18px;
+    padding: 20px 68px 0px 25px;
+}
+
+ul.WhyChooseUl {
+    float: left;
+    margin: 10px 65px 15px 25px;
+    list-style: none;
+}
+
+ul.WhyChooseUl a {
+    text-decoration: none;
+    line-height: 30px;
+    color: #555;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section#WhyChooseSec h3 {
+    font-size: 30px;
+    margin: 5px 25px;
+    font-weight: 600;
+    color: #ff5200;
+    text-transform: uppercase;
+}
+
+section#WhyChooseSec a.btn {
+    margin: 15px 25px;
+}
+
+ul.WhyChooseUl a:hover {
+    color: #ff5200;
+}
+
+ul.WhyChooseUl a i {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+
+/* Why Choose Sec */
+
+
+/* Testimonial Section */
+
+#TestimonialSec {
+    padding: 80px 0px;
+    min-height: 590px;
+    background: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075), url(../Images/Img_4.jpg);
+}
+
+#TestimonialSec img {
+    border-radius: 52px;
+    width: 110px;
+    height: auto;
+    border: 1px solid #ff5200;
+    background: #ff5200;
+}
+
+#TestimonialSec p {
+    color: #ededed;
+    margin: 30px 160px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#TestimonialSec h4 {
+    font-size: 25px;
+    color: #ff5200;
+    font-weight: 600;
+}
+
+#TestimonialSec img:hover {
+    background: transparent;
+    border: 1px solid #ff5200;
+    transition: .3s;
+}
+
+.SlideButton {
+    position: relative;
+}
+
+.SlideButton::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    width: 20px;
+    background: #ff5200;
+    border: 1px solid #ff5200;
+    height: 20px;
+    left: 48%;
+    margin: 80px 0 80px 0px;
+}
+
+.SlideButton2 {
+    position: relative;
+}
+
+.SlideButton2::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    width: 20px;
+    border: 2px solid #ff5200;
+    height: 20px;
+    margin-left: 27px;
+    left: 48%;
+    margin: 80px 0px 80px 27px;
+}
+
+
+/* Testimonial Section */
+
+
+/* Project Section */
+
+section#ProjectSec {
+    padding: 80px 0px;
+    background: #ededed;
+    overflow: hidden;
+}
+
+.SignleProBox {
+    float: left;
+    width: 220px;
+    text-align: center;
+    margin-right: 65px;
+}
+
+.ProjectWrapper {
+    width: 100%;
+}
+
+.SignleProBox:last-Child {
+    margin-right: 0px;
+}
+
+.proIcon i {
+    font-size: 40px;
+    color: #ff5200;
+    margin: 20px 0px;
+}
+
+.proTitle h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #ff5200;
+    font-family: arial black;
+    margin: 15px 0px;
+}
+
+.proDesc h4 {
+    margin: 10px 0px;
+    font-size: 23px;
+    color: #5a5a5a;
+    font-weight: 600;
+}
+
+
+/* Project Section */
+
+
+/* Work Section */
+
+#WorkSec {
+    padding: 180px 0px 200px 0px;
+    background: linear-gradient(#00000094, #00000094), linear-gradient(#00000094, #00000094), url(../Images/Img_2.jpg);
+    position: relative;
+}
+
+#WorkSec h4 {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff5200;
+}
+
+#WorkSec p {
+    margin: 30px 0px;
+    font-size: 18px;
+    color: #ededed;
+}
+
+#WorkSec a.btn {
+    position: absolute;
+    left: 600px;
+    top: 535px;
+}
+
+
+/* Work Section */
+
+
+/* Contact Section */
+
+section#ContactSec {
+    padding: 80px 0px;
+    background: #dddddd;
+}
+
+.ConHeader h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ff5200;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+#ContactSec input {
+    width: 500px;
+    padding: 14px;
+    margin: 12px 0px;
+    border: 2px solid #ff5200;
+    border-radius: 5px;
+    outline: none;
+}
+
+#ContactSec textarea {
+    width: 500px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ff5200;
+}
+
+
+/* Contact Section */
+
+
+/* Footer Section */
+
+footer#FooterSec {
+    padding: 80px 0px;
+    background: linear-gradient(#00000094, #00000094), linear-gradient(#00000094, #00000094), url(../Images/Img_4.jpg);
+    overflow: hidden;
+}
+
+.FooterWrapper {
+    width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.FooterBox {
+    width: 240px;
+    float: left;
+    margin-right: 40px;
+}
+
+.FooterBox h4 {
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff5200;
+    margin: 20px 0px;
+}
+
+.FooterBox p {
+    color: #a2a2a2;
+    font-size: 18px;
+    margin: 20px 20px 10px 0px;
+}
+
+.FooterBox ul {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.FooterBox ul li a {
+    color: #ff5200;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#FooterSec ul li a:hover {
+    color: #ededed;
+}
+
+.FooterBox img {
+    width: 110px;
+    border: 2px solid #ff5200;
+    border-radius: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+.FooterBox h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff5200;
+    margin: 5px 0px;
+}
+
+.FooterBox h6 {
+    font-size: 18px;
+    margin-bottom: -12px;
+    color: #a2a2a2;
+}
+
+.FooterBox input {
+    outline: none;
+    width: 210px;
+    padding: 9px;
+    background: transparent;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    border: 1px solid #ff5200;
+    color: #fff;
+}
+
+.FooterBox a.btn {
+    padding: 8px 28px;
+    font-size: 18px;
+    outline: none;
+    color: #555;
+    border-radius: 94px;
+    background: transparent;
+    border: 1px solid #ff5200;
+}
+
+.FooterBox a.btn:hover {
+    outline: none;
+    background: #ff5200;
+    border: 1px solid #ff5200;
+    color: #ededed;
+}
+
+
+/* Footer Section */
+
+
+/* Copyright Section */
+
+section#CopyrightSec {
+    padding: 40px 0px 20px 0px;
+    background: #222;
+    color: #ededed;
+}
+
+#CopyrightSec h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section#CopyrightSec a {
+    color: #999;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+section#CopyrightSec a:hover {
+    color: #ff5200;
+}
+
+
+/* Copyright Section */

@@ -1,0 +1,68 @@
+section#SignUp {
+    background: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075), url(../Images/Img_7.jpg);
+    min-height: 100vh;
+    background-position: top;
+    background-size: cover;
+}
+
+.SignUpBox {
+    overflow: hidden;
+    width: 100%;
+}
+
+.SignTitle {
+    margin: 80px 0px -15px 0px;
+}
+
+.SignTitle h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ff5200;
+    font-weight: 700;
+}
+
+.SignDesc p {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 25px 0px;
+    color: #666;
+}
+
+.SignInput input {
+    width: 480px;
+    padding: 12px;
+    outline: none;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 2px solid #ff5200;
+    color: #555;
+    border-radius: 10px;
+}
+
+select {
+    width: 480px;
+    padding: 10px;
+    background: transparent;
+    margin-bottom: 15px !important;
+    outline: none;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #ff5200;
+    color: #555;
+}
+
+#SignUp a.btn {
+    margin: 20px;
+    padding: 12px 35px;
+    font-size: 18px;
+    color: #ff5200;
+    font-weight: 600;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #ff5200;
+}
+
+#SignUp a.btn:hover {
+    background: #ff5200;
+    color: #fff;
+}

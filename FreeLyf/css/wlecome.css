@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section#Welcome {
+    min-height: 100vh;
+    padding: 160px 0px;
+    background-position: top;
+    background-size: cover;
+    background: linear-gradient(#00000075, #00000075), linear-gradient(#00000075, #00000075), url(../Images/Img_7.jpg);
+}
+
+.header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff5200;
+    text-transform: uppercase;
+    padding: 100px 0px 0px 0px;
+    margin-bottom: 25px;
+}
+
+.desc h6 {
+    font-size: 18px;
+    color: #ededed;
+    margin: 34px 120px;
+}
+
+.footer h4 {
+    font-size: 33px;
+    font-weight: 600;
+    color: #ff5200;
+    margin: -20px 0px;
+    text-transform: uppercase;
+}
+
+a.AllButton {
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 40px;
+    background: #ff5200;
+    border: 2px solid #ff5200;
+}
+
+a.AllButton:hover {
+    color: #ff5200;
+    border: 2px solid #ff5200;
+    background: transparent;
+}
