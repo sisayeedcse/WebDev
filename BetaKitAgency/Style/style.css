@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation section  */
+
+section#headerSec {
+    color: #fff !important;
+    background: #1BAAA1;
+    border-bottom: 1px solid #F2F3F5;
+}
+
+a.navbar-brand img {
+    width: 150px;
+    color: #fff;
+    margin-right: 50px;
+}
+
+a.navbar-brand:hover {
+    color: #fff;
+}
+
+a.nav-link {
+    margin-right: 24px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+}
+
+a.nav-link:hover {
+    color: #F84E77;
+}
+
+a.nav-link::before {
+    transform: translate(20px, -10px);
+    border-radius: 50000px;
+    content: '';
+    width: 8px;
+    transition: all .3s linear;
+    opacity: 0;
+    height: 8px;
+    background: #F84E77;
+    position: absolute;
+}
+
+a.nav-link:hover::before {
+    opacity: 1;
+}
+
+.headerButton a.btn {
+    padding: 8px 22px;
+    background: #fff;
+    transition: .3s linear;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.headerButton a.btn:hover {
+    opacity: .8;
+    transform: scale(1.02);
+}
+
+
+/* Navigation section  */
+
+
+/* Banner section  */
+
+section#bannerSec {
+    background: #1BAAA1;
+    padding: 5rem 0rem;
+    overflow-x: hidden;
+}
+
+section#bannerSec h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 0px 110px 20px 0px;
+    line-height: 4.5rem;
+}
+
+section#bannerSec p {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 60px 20px 0px;
+    font-weight: 600;
+}
+
+section#bannerSec a.btn {
+    background: #fff;
+    border: none;
+    color: #1BAAA1;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+section#bannerSec i {
+    margin-left: 15px;
+}
+
+section#bannerSec img {
+    width: 865px;
+}
+
+
+/* Banner section  */
+
+
+/* Second section  */
+
+section#secondSec {
+    padding: 100px 0px;
+    background: linear-gradient(white, rgba(27, 170, 160, 0.2));
+    position: relative;
+}
+
+section#secondSec h5 {
+    margin-bottom: 15px;
+    color: #1BAAA1;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section#secondSec h1 {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+section#secondSec p {
+    padding-left: 50px;
+    margin: 60px 0px;
+    color: #646464;
+}
+
+.partnerDiv {
+    border: 1px solid #C2E6E2;
+    padding: 60px;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.partnerDiv img {
+    padding-left: 30px;
+    padding-right: 25px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.partnerDiv img:hover {
+    transform: scale(1.08);
+}
+
+section#secondSec h4 {
+    font-weight: 700;
+    font-size: 44px;
+    margin-top: 50px;
+}
+
+.featureBox {
+    background: #fff;
+    box-shadow: 5px 5px 15px -12px #000;
+    padding: 30px;
+    border: 1px solid #C2E6E2;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: all .2s linear;
+}
+
+.featureBox:hover {
+    transform: scale(1.02);
+}
+
+.featureBox h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.featureBox img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.featureBox h3 {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 20px 0px;
+}
+
+.featureBox h6 {
+    color: #565656;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+
+/* Second section  */
+
+
+/* About section  */
+
+section#aboutSec {
+    padding: 80px 0px;
+}
+
+section#aboutSec h5 {
+    color: #1BAAA0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+section#aboutSec h1 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+section#aboutSec p {
+    margin-bottom: 30px;
+    color: #747B86;
+}
+
+section#aboutSec a.btn {
+    font-weight: 600;
+    font-size: 16px;
+    background: #F8446F;
+    transition: all .3s linear;
+    border: none;
+    padding: 13px 25px;
+}
+
+section#aboutSec a.btn:hover {
+    transform: scale(1.02);
+}
+
+
+/* About section  */
+
+
+/* Service section  */
+
+section#serviceSec {
+    background: #1BAAA0;
+    padding: 50px 0px;
+    position: relative;
+    z-index: 0;
+}
+
+.serviceCon {
+    background-size: contain;
+    background-image: url(../Images/lines.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+section#serviceSec h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+section#serviceSec a.btn {
+    transition: .3s linear;
+    font-weight: 600;
+    padding: 15px 25px;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #000;
+    right: 130px;
+    background: #fff;
+    border: none;
+    position: absolute;
+}
+
+section#serviceSec a.btn:hover {
+    opacity: .8;
+    transform: scale(1.02);
+}
+
+.iconBox {
+    box-shadow: 0px 2px 12px -7px #000;
+    padding: 30px;
+    position: relative;
+    background: #fff;
+    margin-top: 75px;
+    border: 1px solid #B7E2DE;
+    transition: all .18s linear;
+    border-radius: 15px;
+}
+
+.iconBox i {
+    font-weight: 800;
+    font-size: 24px;
+    float: left;
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.iconBox h5 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.iconBox img {
+    position: absolute;
+    width: 86px;
+    top: 0;
+    right: 0px;
+}
+
+.iconBox p {
+    color: #A1748A;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.iconBox:hover {
+    transform: scale(1.02);
+}
+
+section#serviceSec::after {
+    bottom: 0;
+    z-index: -1;
+    height: 200px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    background: #EAF7F6;
+}
+
+
+/* Service section  */
