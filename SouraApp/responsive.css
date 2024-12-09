@@ -1,0 +1,38 @@
+@media (max-width:998px) {
+    header#headerSec {
+        background-color: #F3724D;
+        width: 100vw;
+        height: 100px;
+    }
+    #bannerSec {
+        background: url(Images/banner.png);
+        width: 100vw;
+        height: 100vh;
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    a.navbar-brand {
+        margin-left: 0px !important;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .bannerWrapper {
+        left: 25px;
+        top: 20px;
+    }
+    .bannerLeft h2 {
+        margin-top: 15px;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .meetbox h5 {
+        margin-top: 135px;
+    }
+}
+
+@media (max-width:860px) {
+    header#headerSec {
+        background-position: left;
+    }
+}

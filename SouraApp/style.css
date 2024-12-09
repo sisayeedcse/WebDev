@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navigation bar */
+
+a.navbar-brand {
+    font-weight: 600;
+    margin-left: 80px;
+    font-size: 32px;
+    color: #191A20;
+    font-family: poppins, sans-serif;
+    letter-spacing: 1px;
+}
+
+header#headerSec {
+    background-size: cover;
+    background: url(Images/banner.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 800px;
+    background-position-y: inherit;
+}
+
+a.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #888888;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-right: 40px;
+}
+
+a.nav-link:hover {
+    color: #F1556A;
+}
+
+a.nav-link.active {
+    color: #F1556A;
+}
+
+ul.navbar-nav {
+    border: 2px solid #fff;
+    background: #fff;
+    margin-left: 100px !important;
+}
+
+
+/* Navigation bar */
+
+
+/* Banner section  */
+
+.bannerWrapper {
+    position: absolute;
+    top: 18vh;
+}
+
+.meetbox h5 {
+    color: #fff;
+    position: relative;
+    border-radius: 8px;
+    margin-top: 50px;
+    padding: 18px;
+    background: #F3724D;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.bannerLeft h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.bannerLeft p {
+    font-size: 27px;
+    color: #777777;
+    font-weight: 400;
+}
+
+.bannerLeft b {
+    color: #F1556A;
+    font-weight: 400;
+}
+
+.bannerLeft a {
+    padding: 15px 30px;
+    background: transparent;
+    color: #F1556A;
+    outline: none;
+    border: 2px solid #F1556A;
+    border-radius: 50000px;
+    font-size: 16px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.bannerLeft a:hover {
+    background: #F1556A;
+    color: #fff;
+    border: 2px solid #F1556A;
+    transition: .3s linear;
+}
+
+
+/* Banner section  */
+
+
+/* About section  */
+
+section#aboutSec {
+    background: #ffffff;
+    padding: 10% 0%;
+}
+
+.aboutWrapper {
+    box-shadow: 0px 1px 9px 3px #F4F4F4;
+    padding: 20px;
+}
+
+.aboutIcon {
+    text-align: center;
+    position: relative;
+}
+
+.aboutIcon i {
+    font-size: 33px;
+    background: #F37749;
+    color: #fff;
+    padding: 26px;
+    border-radius: 5000px;
+}
+
+.aboutHead h2 {
+    color: #1E1E1E;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.aboutPara {
+    margin: 25px 0px;
+    color: #878787;
+    font-size: 17px;
+    font-family: 'Roboto';
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.aboutBtn {
+    text-align: center;
+}
+
+.aboutBtn a.btn {
+    font-weight: 600;
+    margin: 25px 0px;
+    border-radius: 500px;
+    border: 2px solid #F1556A;
+    outline: none;
+    padding: 15px 50px;
+    background: transparent;
+    color: #F1556A;
+    transition: .4s linear;
+}
+
+.aboutBtn a.btn:hover {
+    background: #F1556A;
+    color: #fff;
+}
+
+
+/* About section  */
+
+
+/*Meet Section */
+
+section#meetSec p {
+    font-size: 18px;
+    color: #7d7d7d !important;
+}
+
+section#meetSec h2 {
+    font-weight: 500;
+    margin: 15px 0px 25px 0px;
+}
+
+section#meetSec img {
+    float: right;
+    margin-right: 100px;
+    margin-top: 73px;
+}
+
+.meetI {
+    float: left;
+}
+
+.meetI i {
+    font-size: 30px;
+    color: #f37749 !important;
+    padding: 25px;
+}
+
+.meetIconBox {
+    padding: 25px;
+    box-shadow: 0px 0px 15px 3px #F4F4FF;
+    margin: 25px 0px;
+}
+
+.meetIconBox2 {
+    background: #f37749;
+    box-shadow: none !important;
+}
+
+.iBox2 i,
+h4,
+span {
+    color: #fff !important;
+}
+
+.meetHead h3 {
+    font-size: 20px;
+}
+
+.meetPara {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/*Meet Section */
+
+
+/* Video section  */
+
+#videoSec {
+    background: url(Images/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.videoIcon {
+    text-align: center;
+    margin: auto;
+}
+
+.videoDecs {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.videoIcon i {
+    border-radius: 5000px;
+    padding: 35px;
+    color: #f37749;
+    font-size: 45px;
+    background: #fff;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
+
+.videoContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.videoWrapper {
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #ff5722a8;
+}
+
+.videoDecs h5 {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.videoDecs p {
+    font-size: 15px;
+    text-align: end;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+/* Video section  */
+
+
+/* Pricing section  */
+
+#pricingSec {
+    padding: 85px 0px;
+}
+
+section#pricingSec h2 {
+    font-size: 41px;
+    margin: 30px 0px;
+    font-weight: 700;
+    position: relative;
+}
+
+section#pricingSec h2 b {
+    color: #da572a;
+    font-weight: 700;
+}
+
+section#pricingSec h2::after {
+    content: '';
+    position: absolute;
+    width: 12%;
+    background: #000;
+    border-bottom: 3px solid black;
+    top: 70px;
+    right: 44%;
+}
+
+section#pricingSec h2::before {
+    right: 550px;
+    top: 136%;
+    content: '';
+    transform: rotate3d(0, -1, 4, 45deg);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #000;
+}
+
+.priceBox {
+    box-shadow: 0px 0px 10px 1px #f4f4f4;
+    padding: 20px;
+    position: relative;
+    margin: 60px 0px;
+}
+
+.priceBox h4 {
+    margin: 20px 0px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #da572a !important;
+    text-transform: uppercase;
+}
+
+.priceBox h5 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000 !important;
+}
+
+.priceBox h6 {
+    margin-top: -8px;
+    font-size: 13px;
+    margin-bottom: 21px;
+    color: #6b6b6b !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.priceBox i {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.priceBox p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    color: #6b6b6b !important;
+}
+
+.priceBox a.btn {
+    margin: 20px 0px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50000px;
+    background: transparent;
+    border: 2px solid #da572a;
+    color: #da572a;
+    font-weight: 600;
+}
+
+.priceBox::before {
+    left: -1px;
+    position: absolute;
+    content: '';
+    width: 35px;
+    top: 192px;
+    height: 1px;
+    background: #dadada;
+}
+
+.priceBox::after {
+    right: -1px;
+    position: absolute;
+    content: '';
+    width: 35px;
+    top: 192px;
+    height: 1px;
+    background: #dadada;
+}
+
+
+/* Pricing section  */ 
