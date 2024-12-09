@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background: #ededed;
+}
+
+nav.navbar {
+    width: 1200px;
+    margin: auto;
+}
+
+a.navbar-brand {
+    color: #7cd0ea;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    float: left;
+    display: block;
+    padding: 11px;
+    font-family: arial;
+}
+
+ul.navbar-nav {
+    list-style: none;
+    display: inline-block;
+    margin-left: 240px;
+    margin-top: 15px;
+}
+
+li.nav-item {
+    float: left;
+}
+
+a.nav-link {
+    display: block;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 13px;
+    font-family: arial;
+}
+
+a.nav-link:hover {
+    color: #7cd0ea;
+}
+
+
+/* Banner */
+
+section#BannerSec {
+    min-height: 470px;
+    position: relative;
+    background: #ededed;
+}
+
+.container {
+    display: block;
+    width: 1200px;
+    margin: auto;
+}
+
+.BannerLeft {
+    position: absolute;
+    top: 55px;
+    left: 99px;
+}
+
+section#BannerSec img {
+    width: 550px;
+    height: auto;
+    float: left;
+}
+
+section#BannerSec h2 {
+    font-size: 43px;
+    font-family: arial;
+}
+
+.BannerRight {
+    position: absolute;
+    width: 540px;
+    top: 150px;
+    right: 140px;
+}
+
+section#BannerSec p {
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-family: arial;
+    margin-top: 15px;
+    text-align: justify;
+    color: #777;
+}
+
+section#BannerSec button {
+    padding: 8px 20px;
+    background: #7cd0ead1;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 2px solid #91d5eb;
+}
+
+section#BannerSec button:hover {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.BannerLeft {
+    position: absolute;
+    top: 55px;
+    left: 110px;
+}
+
+section#BannerSec img {
+    width: 550px;
+    height: auto;
+    float: left;
+}
+
+section#BannerSec h2 {
+    font-size: 43px;
+    font-family: arial;
+}
+
+.BannerRight {
+    position: absolute;
+    width: 540px;
+    top: 150px;
+    right: 140px;
+}
+
+section#BannerSec p {
+    line-height: 27px;
+    font-size: 18px;
+    font-family: arial;
+    margin-top: 15px;
+    text-align: justify;
+    color: #777;
+}
+
+section#BannerSec button {
+    padding: 8px 20px;
+    background: #7cd0ead1;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 2px solid #91d5eb;
+}
+
+section#BannerSec button:hover {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+
+
+/* about Sec */
+
+section#AboutSec {
+    background: #fff;
+    padding: 80px 0px 140px 0px;
+}
+
+.AboutWrapper {
+    margin: auto;
+    width: 800px;
+}
+
+.AboutHead {
+    margin: auto;
+    width: 150px;
+}
+
+.AboutHead h2 {
+    font-size: 30px;
+    font-family: arial;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.AboutHead h2:before {
+    position: absolute;
+    content: '';
+    top: 45px;
+    border-bottom: 4px solid #000;
+    width: 170px;
+    left: -15px;
+}
+
+.AboutHead h2:after {
+    position: absolute;
+    content: '';
+    top: 42px;
+    border-bottom: 9px solid #000;
+    width: 100px;
+    left: 20px;
+}
+
+section#AboutSec p {
+    margin-top: 21px;
+    line-height: 28px;
+    color: #666;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+section#AboutSec button {
+    left: 610px;
+    margin-top: 20px;
+    position: absolute;
+    padding: 8px 20px;
+    background: #91d5eb;
+    color: #fff;
+    font-size: 16px;
+    font-family: arial;
+    border: 2px solid #91d5eb;
+}
+
+section#AboutSec button:hover {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+
+
+/* About Sec */
+
+
+/* Profession sec */
+
+section#ProSec {
+    background: skyblue;
+    padding: 45px 0px;
+    overflow: hidden;
+}
+
+.ProWrapper {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+}
+
+.ProBox {
+    margin-right: 60px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.ProIcon {
+    width: 50px;
+    float: left;
+}
+
+.ProDesc {
+    float: right;
+    width: 180px;
+    margin-left: 10px;
+}
+
+.ProDesc h5 {
+    margin-bottom: 7px;
+    font-size: 25px;
+    margin-top: 3px;
+    color: #fff;
+}
+
+.ProDesc p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ProIcon i {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+/* Profession sec */
+
+
+/* Work Process */
+
+section#WorkSec {
+    background: #fff;
+    padding: 80px 0px;
+}
+
+.WorkHead {
+    width: 310px;
+    margin: auto;
+}
+
+.WordWrapper {
+    width: 1140px;
+    margin: auto;
+}
+
+.WorkHead h1 {
+    font-size: 35px;
+}
+
+.WorkDesc {
+    width: 570px;
+    margin: auto;
+}
+
+.WorkDesc p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.WorkVideo {
+    width: 900px;
+    margin: auto;
+}
+
+.WorkVideo video {
+    width: 900px;
+}
+
+
+/* Work Process */
+
+
+/* Services Section */
+
+section#ServiceSec {
+    padding: 80px 0px;
+    background: #f5f5f5;
+}
+
+.ServiceWrapper {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+}
+
+.SerBox {
+    float: left;
+    margin: 50px 50px 50px 0px;
+    width: 300px;
+}
+
+.SerIcon {
+    width: 150px;
+    margin: auto;
+    padding: 15px;
+}
+
+.SerIcon i {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.SerHead {
+    width: 250px;
+    margin: auto;
+}
+
+.SerHead h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.SerDesc p {
+    text-align: left;
+    font-size: 18px;
+    color: #484747;
+    margin-bottom: 20px;
+}
+
+
+/* Services Section */
+
+
+/* Feedbacks Section */
+
+section#FeedSec {
+    padding: 100px 0px 80px 0px;
+    background: skyblue;
+}
+
+.FeedWrapper {
+    width: 1140px;
+    margin: auto;
+}
+
+.FeedWrapper p {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #292929;
+}
+
+.FeedWrapper h5 {
+    font-size: 25px;
+    text-align: center;
+    color: #272727;
+}
+
+
+/* Feedbacks Section */
+
+
+/* Contact section */
+
+section#ConSec {
+    padding: 100px 0px 80px 0px;
+    background: #ededed;
+}
+
+.ConWrapper {
+    width: 1140px;
+    margin: auto;
+}
+
+.ConHead h1 {
+    text-align: center;
+    font-size: 33px;
+    margin: 25px 0px;
+}
+
+.ConDesc p {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.ConDesc {
+    width: 500px;
+    margin: auto;
+}
+
+.ConInput input {
+    margin-bottom: 14px;
+    width: 300px;
+    font-size: 18px;
+    margin-right: 25px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #000;
+    outline: none;
+}
+
+.ConInput_3 input {
+    width: 650px;
+}
+
+.ConInput {
+    width: 700px;
+    margin: auto;
+}
+
+.ConInput textarea {
+    width: 670px;
+    border: none;
+    height: 190px;
+    margin-top: -12px;
+    outline: none;
+}
+
+.ConBtn button {
+    margin-top: 25px;
+    text-align: center;
+    border: 2px solid skyblue;
+    color: #fff;
+    padding: 12px 20px;
+    background: skyblue;
+    outline: none;
+}
+
+.ConBtn {
+    width: 155px;
+    margin: auto;
+}
+
+
+/* Contact section */
+
+
+/* Footer Section */
+
+footer#Footer {
+    padding: 50px 0px;
+    background: #000;
+    color: #fff;
+}
+
+.footerWrapper {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.FooterBox {
+    width: 300px;
+    float: left;
+}
+
+.FooterBox h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.FooterBox p {
+    font-size: 18px;
+}
+
+a.tel {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+a.email {
+    margin-right: 110px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.FooterBox a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.FooterUl {
+    list-style: none;
+}
+
+a.FooterLink {
+    font-size: 18px;
+}
+
+.footerNav {
+    float: left;
+    margin-right: 50px;
+}
+
+footer#Footer i {
+    color: skyblue;
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 6px;
+}
+
+
+/* Footer Section */
