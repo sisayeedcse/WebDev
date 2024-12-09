@@ -1,0 +1,302 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins ;
+}
+/* Header CSS  */
+.topbar{
+    background-color: #df3f00;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.topbartext{
+    padding: 10px 0px;
+}
+
+nav.navbar.navbar-expand-lg {
+    display: flex;
+    align-items: center;
+}
+a.nav-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+a.nav-link:hover{
+    color: #df3f00;
+}
+
+li.nav-item {
+    padding: 15px;
+}
+/* Hero Section CSS  */
+.heroLeft h1 {
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 116px;
+}
+
+section#heroSec {
+    padding: 80px 0px;
+    background: #fdf1ed;
+}
+
+.heroLeft p {
+    font-size: 23px;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+
+.heroLeft a {
+    padding: 15px 35px;
+    font-size: 17px;
+    margin-right: 20px;
+    border: 1px solid #df3f00;
+    background: #df3f00;
+    text-transform: uppercase;    
+    font-weight: 600;
+    border-radius: 10px;
+}
+a.heroBtn2{
+    background-color: transparent;
+    color: #df3f00;
+    border: 2px solid;
+}
+a.heroBtn1:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+a.heroBtn2:hover{
+    background-color: #df3f00;
+    color: #fff;
+    border-color: #df3f00;
+}
+img.heroImg{
+    border-radius: 10px;
+}
+
+/* Category Section  */
+section#CategorySec {
+    background-image: url(Images/hero-1.jpg);
+    text-align: center;
+    color: #fff;
+}
+.categoryDiv{
+    background-color: #df3f00cf;
+    padding: 80px 0px;
+}
+.topH {
+    font-size: 43px;
+    margin-bottom: 55px;
+    font-weight: 600;
+}
+
+p.topPara {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.categoryDiv a {
+    background: transparent;
+    border: 1px solid;
+    padding: 10px 60px;
+    margin-top: 40px;
+}
+
+.categoryDiv a:hover {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.iconBox {
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    color: #000;
+    background: #fff;
+    margin: 15px 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconBox:hover{
+    color: #df3f00;
+}
+.iconBox h5 {
+    font-size: 30px;
+    margin-left: -5%;
+}
+
+.iconBox i {
+    font-size: 21px;
+    border: 1px solid #00000047;
+    padding: 20px;
+    color: #000000bd;
+    border-radius: 6px;
+}
+.iconBox i:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* About Section CSS  */
+section#AboutSec {
+    padding: 120px 0px 120px 0px;
+}
+
+.aboutLeft h2 {
+    line-height: 57px;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.aboutLeft p {
+    margin: 26px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.aboutLeft a {
+    padding: 15px 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #df3f00;
+    border: 2px solid #df3f00;
+    border-radius: 10px;
+}
+
+.aboutLeft a:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+img.aboutImg{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Menu Section  */
+section#menuSec {
+    padding: 80px 0px;
+    text-align: center;
+}
+.menuImg{
+    border-radius: 10px;
+}
+.menuItemBox {
+    display: flex;
+    padding: 17px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.priceName {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.priceName h4 {
+    font-size: 28px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.priceName span {
+    font-size: 25px;
+    font-weight: 800;
+}
+.itemBox p {
+    width: 100%;
+    text-align: left;
+    font-weight: 300;
+    font-size: 17px;
+    margin: 10px 40px;
+}
+
+.starReview {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 40px;
+    flex-direction: row;
+}
+
+.starReview p {
+    text-align: left;
+    margin-left: -5px;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.starReview i {
+    font-size: 20px;
+    color: #df3f00;
+}
+
+/* Contact US css  */
+.contactHead{
+    text-align: center;
+}
+.contact-form {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.formInputs {
+    display: flex;
+}
+.finputs{
+    width: 50%;
+}
+label.contactLabel {
+    display: block;
+    margin-bottom: 8px;
+}
+input.contactInput{
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea.contactArea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contactLink{
+    text-align: center;
+}
+a.contactBtn {
+    padding: 10px 35px;
+    font-size: 18px;
+    margin-right: 20px;
+    border: 1px solid #df3f00;
+    background: #df3f00;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+}
+a.contactBtn:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
