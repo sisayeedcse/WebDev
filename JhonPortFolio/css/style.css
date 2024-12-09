@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header#Header {
+    background: #15263e;
+}
+
+ul.navbar-nav {
+    width: 900px;
+    margin: auto;
+}
+
+a.nav-link {
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 25px;
+    margin-left: 45px;
+    position: relative;
+}
+
+a.nav-link:hover {
+    color: #ededed;
+}
+
+a.nav-link::before {
+    left: 120%;
+    top: 50%;
+    border-bottom: 2px solid #ededed;
+    content: '';
+    width: 5px;
+    height: 2px;
+    position: absolute;
+}
+
+a.nav-link.navLast::before {
+    width: 0;
+}
+
+
+/* Header  */
+
+
+/* BAnner */
+
+section#BannerSec {
+    background: #ededed;
+    padding: 90px 0px;
+    background-image: url(../Images/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#BannerSec h3 {
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+section#BannerSec h1 {
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 125px;
+    color: #15263e;
+}
+
+section#BannerSec h2 {
+    color: #ffffff;
+    margin-top: -40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90px;
+    letter-spacing: 20px;
+}
+
+section#BannerSec h5 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: -15px;
+    margin-left: -20px;
+}
+
+section#BannerSec a {
+    padding: 8px 15px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0px;
+    background: #15263e;
+    margin-top: 50px;
+    border: 2px solid #15263e;
+    text-transform: uppercase;
+}
+
+
+/* BAnner */
+
+
+/* About */
+
+section#AboutSec {
+    padding-top: 80px;
+    background: #ffffff;
+}
+
+section#AboutSec h2 {
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #3f4f63;
+}
+
+#AboutSec h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: end;
+    color: #b048f1;
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+
+section#AboutSec p {
+    font-size: 17px;
+    text-align: end;
+    margin-top: 25px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #777;
+}
+
+section#AboutSec img {
+    width: 100%;
+}
+
+section#AboutSec h4 {
+    color: #6e6f71;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section#AboutSec .progress {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+/* About */
+
+
+/* Contact Info */
+
+section#ContactInfo {
+    background: #dcdcde;
+    padding: 50px 0px;
+}
+
+.CBox {
+    overflow: hidden;
+}
+
+.CIcon {
+    margin-right: 30px;
+    text-align: center;
+    width: 60px;
+    float: left;
+}
+
+.CIcon i {
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 16px;
+    color: #ffffff;
+    background: #15263e;
+}
+
+.CHead h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #15263e;
+}
+
+.ConPara p {
+    color: #444;
+    margin-top: 10px;
+}
+
+.ConPara {
+    float: left;
+}
+
+
+/* Contact Info */
+
+
+/* Services */
+
+section#Services {
+    padding: 80px 0px;
+}
+
+section#Services h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #15263e;
+}
+
+section#Services p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+}
+
+.SerI i {
+    font-size: 20px;
+    padding: 20px;
+    background: #15263e;
+    color: #fff;
+    border-radius: 50px;
+    margin: 25px 0px;
+}
+
+.serCon h4 {
+    text-transform: uppercase;
+    color: #15263e;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.serCon p {
+    font-size: 16px !important;
+    margin: 15px 25px;
+}
+
+
+/* Services */
+
+
+/* Testimonial */
+
+section#Testimonial {
+    padding: 100px 0px;
+    background-image: url(../Images/Testimonials.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#Testimonial h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    margin: 45px 0px;
+    letter-spacing: 2px;
+}
+
+section#Testimonial p {
+    color: #ededed;
+    font-size: 24px;
+    float: left;
+    font-weight: 600;
+    text-align: end;
+}
+
+section#Testimonial img {
+    margin-right: 40px;
+    float: left;
+    width: 100px;
+}
+
+section#Testimonial h4 {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.TestimonialP p {
+    color: #c714d5 !important;
+    font-size: 15px !important;
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+/* Testimonial */
