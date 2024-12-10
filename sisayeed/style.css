@@ -1,4 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/*Responsive Codes Here*/
+/* General Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Header */
+    #headSec .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    #headSec a.nav-link {
+        margin-left: 0;
+        padding: 10px;
+    }
+    #headSec .hireMe {
+        margin-top: 10px;
+    }
+
+    /* Hero Section */
+    .mainCon {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mainRight img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    section#mainSec h1 {
+        font-size: 50px;
+    }
+    section#mainSec p {
+        font-size: 18px;
+    }
+
+    /* About Section */
+    .aboutSec {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutSec img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Skills Section */
+    .skillCon {
+        flex-direction: column;
+    }
+    .skillRight, .skillLeft {
+        width: 100%;
+        text-align: center;
+    }
+    section#skillSec img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Project Section */
+    .proSec, .proSec2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .proBox {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Service Section */
+    .serCardbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .serCard {
+        margin: 10px 0;
+    }
+
+    /* Contact Section */
+    .contactCon {
+        flex-direction: column;
+        text-align: center;
+    }
+    .conleft, .conRight {
+        width: 100%;
+    }
+    .nameMail {
+        flex-direction: column;
+    }
+    #formName {
+        margin-right: 0;
+    }
+
+    /* Footer Section */
+    .footerCon {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerLeft, .footerMid, .footerRight {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/*Responsive Codes Here*/
+/*Sites Codes Here*/
 *{
     padding: 0px;
     margin: 0px;
