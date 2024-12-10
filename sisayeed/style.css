@@ -1,70 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 /*Responsive Codes Here*/
-/* General Mobile Styles */
+
+/*Responsive for NavBar section*/
 @media screen and (max-width: 768px) {
-    /* Header */
-    #headSec .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    #headSec a.nav-link {
-        margin-left: 0;
+    header#headSec {
         padding: 10px;
     }
-    #headSec .hireMe {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 10px;
     }
-
-    /* Hero Section */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hireMe {
+        margin-top: 10px;
+    }
+}
+/* Responsive for Hero Banner*/
+@media screen and (max-width: 768px) {
+    section#mainSec {
+        padding: 50px 10px;
+        text-align: center;
+    }
     .mainCon {
         flex-direction: column;
-        text-align: center;
     }
-    .mainRight img {
+    section#mainSec img {
         width: 100%;
-        margin-top: 20px;
+        max-width: 400px;
     }
     section#mainSec h1 {
-        font-size: 50px;
+        font-size: 48px;
     }
     section#mainSec p {
-        font-size: 18px;
+        font-size: 16px;
     }
-
-    /* About Section */
+}
+/*Responsive for About section*/
+@media screen and (max-width: 768px) {
+    section#aboutSec {
+        text-align: center;
+    }
     .aboutSec {
         flex-direction: column;
-        text-align: center;
+        padding: 20px;
     }
     .aboutSec img {
         width: 80%;
-        margin-bottom: 20px;
-    }
-
-    /* Skills Section */
-    .skillCon {
-        flex-direction: column;
-    }
-    .skillRight, .skillLeft {
-        width: 100%;
-        text-align: center;
-    }
-    section#skillSec img {
-        width: 80%;
         margin: 20px auto;
     }
-
-    /* Project Section */
+}
+/*Responsive for Projects Sec*/
+@media screen and (max-width: 768px) {
     .proSec, .proSec2 {
         flex-direction: column;
         align-items: center;
     }
     .proBox {
-        margin-right: 0;
-        margin-bottom: 20px;
+        margin: 10px 0;
+        width: 90%;
     }
-
-    /* Service Section */
+    .proBox img {
+        width: 100%;
+    }
+}
+/*Responsive for skills and services Section*/
+@media screen and (max-width: 768px) {
+    .skillCon {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillLeft, .skillRight {
+        width: 100%;
+    }
     .serCardbox {
         flex-direction: column;
         align-items: center;
@@ -72,36 +88,21 @@
     .serCard {
         margin: 10px 0;
     }
-
-    /* Contact Section */
-    .contactCon {
-        flex-direction: column;
-        text-align: center;
-    }
-    .conleft, .conRight {
-        width: 100%;
-    }
-    .nameMail {
-        flex-direction: column;
-    }
-    #formName {
-        margin-right: 0;
-    }
-
-    /* Footer Section */
+}
+/*Responsive for Footer*/
+@media screen and (max-width: 768px) {
     .footerCon {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     .footerLeft, .footerMid, .footerRight {
         width: 100%;
-        text-align: center;
+        margin: 5px 0;
     }
 }
 
 
-
-/*Responsive Codes Here*/
 /*Sites Codes Here*/
 *{
     padding: 0px;
