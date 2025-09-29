@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Productivity Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <button
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      title="Toggle Dark Mode"
+    >
+      <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <button class="fab" onclick="toggleQuickAdd()" title="Quick Add">
+      <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="quick-add-modal" id="quickAddModal">
+      <h4 style="margin-bottom: 15px; color: #667eea">Quick Add</h4>
+      <input
+        type="text"
+        id="quickInput"
+        placeholder="Add task, assignment, or schedule..."
+        style="margin-bottom: 10px"
+      />
+      <div style="display: flex; gap: 5px">
+        <button
+          class="btn"
+          onclick="quickAdd('task')"
+          style="font-size: 12px; padding: 8px 12px"
+        >
+          Task
+        </button>
+        <button
+          class="btn"
+          onclick="quickAdd('assignment')"
+          style="font-size: 12px; padding: 8px 12px"
+        >
+          Assignment
+        </button>
+        <button
+          class="btn"
+          onclick="quickAdd('schedule')"
+          style="font-size: 12px; padding: 8px 12px"
+        >
+          Schedule
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h1>📚 Student Productivity Hub</h1>
+        <p>Master your time, achieve your goals</p>
+      </div>
+
+      <div class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('tasks')">
+          <i class="fas fa-tasks"></i> Tasks
+        </button>
+        <button class="tab-btn" onclick="switchTab('timer')">
+          <i class="fas fa-clock"></i> Pomodoro
+        </button>
+        <button class="tab-btn" onclick="switchTab('assignments')">
+          <i class="fas fa-clipboard-list"></i> Assignments
+        </button>
+        <button class="tab-btn" onclick="switchTab('schedule')">
+          <i class="fas fa-calendar-alt"></i> Schedule
+        </button>
+        <button class="tab-btn" onclick="switchTab('stats')">
+          <i class="fas fa-chart-bar"></i> Stats
+        </button>
+        <button class="tab-btn" onclick="switchTab('focus')">
+          <i class="fas fa-brain"></i> Focus
+        </button>
+      </div>
+
+      <div id="tasks" class="tab-content active">
+        <div class="card">
+          <h3><i class="fas fa-tasks"></i> Task Manager</h3>
+          <div class="input-group">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Enter a new task..."
+            />
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
+            <div class="input-group">
+              <select id="taskPriority">
+                <option value="low">🟢 Low Priority</option>
+                <option value="medium">🟡 Medium Priority</option>
+                <option value="high">🔴 High Priority</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select id="taskCategory">
+                <option value="general">📝 General</option>
+                <option value="study">📚 Study</option>
+                <option value="work">💼 Work</option>
+                <option value="personal">👤 Personal</option>
+                <option value="health">🏃‍♂️ Health</option>
+              </select>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <button class="btn" onclick="addTask()">
+              <i class="fas fa-plus"></i> Add Task
+            </button>
+            <button class="btn" onclick="sortTasks('priority')">
+              <i class="fas fa-sort"></i> Sort by Priority
+            </button>
+            <button class="btn btn-danger" onclick="clearCompletedTasks()">
+              <i class="fas fa-trash"></i> Clear Completed
+            </button>
+          </div>
+
+          <div id="taskList" style="margin-top: 20px"></div>
+
+          <div
+            style="
+              margin-top: 20px;
+              padding: 15px;
+              background: rgba(102, 126, 234, 0.1);
+              border-radius: 10px;
+            "
+          >
+            <label style="display: block; margin-bottom: 5px; font-weight: 600"
+              >Filter Tasks:</label
+            >
+            <select
+              id="taskFilter"
+              onchange="filterTasks()"
+              style="width: 100%"
+            >
+              <option value="all">All Tasks</option>
+              <option value="pending">Pending Tasks</option>
+              <option value="completed">Completed Tasks</option>
+              <option value="high">High Priority</option>
+              <option value="medium">Medium Priority</option>
+              <option value="low">Low Priority</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="timer" class="tab-content">
+        <div class="card">
+          <h3><i class="fas fa-clock"></i> Pomodoro Timer</h3>
+          <div class="timer-display">
+            <div class="timer-circle">
+              <div class="timer-time" id="timerDisplay">25:00</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="timerProgress"></div>
+            </div>
+            <div class="timer-controls">
+              <button class="btn" onclick="startTimer()">
+                <i class="fas fa-play"></i> Start
+              </button>
+              <button class="btn" onclick="pauseTimer()">
+                <i class="fas fa-pause"></i> Pause
+              </button>
+              <button class="btn" onclick="resetTimer()">
+                <i class="fas fa-stop"></i> Reset
+              </button>
+              <button class="btn" onclick="setTimerMode('work')">
+                <i class="fas fa-briefcase"></i> Work (25m)
+              </button>
+              <button class="btn" onclick="setTimerMode('break')">
+                <i class="fas fa-coffee"></i> Break (5m)
+              </button>
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-top: 30px;
+              padding: 20px;
+              background: rgba(102, 126, 234, 0.1);
+              border-radius: 15px;
+            "
+          >
+            <h4 style="margin-bottom: 15px; color: #667eea">
+              <i class="fas fa-target"></i> Session Goal
+            </h4>
+            <input
+              type="text"
+              id="sessionGoal"
+              placeholder="What will you work on this session?"
+              style="margin-bottom: 10px"
+            />
+            <button class="btn" onclick="setSessionGoal()">Set Goal</button>
+            <div
+              id="currentGoal"
+              style="margin-top: 10px; font-style: italic; color: #666"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="assignments" class="tab-content">
+        <div class="card">
+          <h3>Assignment Tracker</h3>
+          <div class="input-group">
+            <input
+              type="text"
+              id="assignmentName"
+              placeholder="Assignment name..."
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="assignmentSubject"
+              placeholder="Subject..."
+            />
+          </div>
+          <div class="input-group">
+            <input type="date" id="assignmentDue" />
+          </div>
+          <div class="input-group">
+            <textarea
+              id="assignmentNotes"
+              placeholder="Notes..."
+              rows="3"
+            ></textarea>
+          </div>
+          <button class="btn" onclick="addAssignment()">Add Assignment</button>
+          <div id="assignmentList" style="margin-top: 20px"></div>
+        </div>
+      </div>
+
+      <div id="schedule" class="tab-content">
+        <div class="card">
+          <h3>Daily Schedule</h3>
+          <div class="input-group">
+            <input type="time" id="scheduleTime" />
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="scheduleEvent"
+              placeholder="Event description..."
+            />
+          </div>
+          <button class="btn" onclick="addScheduleItem()">
+            Add to Schedule
+          </button>
+          <div id="scheduleList" style="margin-top: 20px"></div>
+        </div>
+      </div>
+
+      <div id="stats" class="tab-content">
+        <div class="card">
+          <h3><i class="fas fa-chart-bar"></i> Productivity Statistics</h3>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="completedTasks">0</div>
+              <div><i class="fas fa-check-circle"></i> Tasks Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="totalTasks">0</div>
+              <div><i class="fas fa-list"></i> Total Tasks</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="pomodoroCount">0</div>
+              <div><i class="fas fa-tomato"></i> Pomodoro Sessions</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="studyTime">0h</div>
+              <div><i class="fas fa-clock"></i> Study Time Today</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="productivity">0%</div>
+              <div><i class="fas fa-chart-line"></i> Productivity Rate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="streak">0</div>
+              <div><i class="fas fa-fire"></i> Daily Streak</div>
+            </div>
+          </div>
+          <button
+            class="btn btn-danger"
+            onclick="resetStats()"
+            style="margin-top: 20px"
+          >
+            <i class="fas fa-refresh"></i> Reset Statistics
+          </button>
+        </div>
+      </div>
+
+      <div id="focus" class="tab-content">
+        <div class="card">
+          <h3><i class="fas fa-brain"></i> Focus Mode</h3>
+          <div style="margin-bottom: 30px">
+            <h4 style="margin-bottom: 15px; color: #667eea">
+              <i class="fas fa-volume-up"></i> Ambient Sounds
+            </h4>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+              "
+            >
+              <button
+                class="btn"
+                onclick="toggleAmbientSound('rain')"
+                id="rainBtn"
+              >
+                <i class="fas fa-cloud-rain"></i> Rain
+              </button>
+              <button
+                class="btn"
+                onclick="toggleAmbientSound('forest')"
+                id="forestBtn"
+              >
+                <i class="fas fa-tree"></i> Forest
+              </button>
+              <button
+                class="btn"
+                onclick="toggleAmbientSound('ocean')"
+                id="oceanBtn"
+              >
+                <i class="fas fa-water"></i> Ocean
+              </button>
+              <button
+                class="btn"
+                onclick="toggleAmbientSound('cafe')"
+                id="cafeBtn"
+              >
+                <i class="fas fa-coffee"></i> Café
+              </button>
+            </div>
+            <div style="margin-top: 15px">
+              <label>Volume: <span id="volumeLabel">50%</span></label>
+              <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="100"
+                value="50"
+                style="width: 100%; margin-top: 5px"
+                oninput="adjustVolume(this.value)"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              margin-bottom: 30px;
+              padding: 25px;
+              background: rgba(102, 126, 234, 0.1);
+              border-radius: 15px;
+              text-align: center;
+            "
+          >
+            <h4 style="margin-bottom: 20px; color: #667eea">
+              <i class="fas fa-lungs"></i> Breathing Exercise
+            </h4>
+            <div
+              id="breathingCircle"
+              style="
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                margin: 0 auto 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                transition: all 4s ease;
+              "
+            >
+              Breathe
+            </div>
+            <button
+              class="btn"
+              onclick="startBreathingExercise()"
+              id="breathingBtn"
+            >
+              <i class="fas fa-play"></i> Start Breathing
+            </button>
+            <div
+              id="breathingInstruction"
+              style="
+                margin-top: 15px;
+                font-size: 1.1em;
+                color: #667eea;
+                font-weight: 500;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              padding: 25px;
+              background: rgba(102, 126, 234, 0.05);
+              border-radius: 15px;
+              text-align: center;
+            "
+          >
+            <h4 style="margin-bottom: 20px; color: #667eea">
+              <i class="fas fa-quote-left"></i> Daily Motivation
+            </h4>
+            <div
+              id="focusQuote"
+              style="
+                font-size: 1.2em;
+                font-style: italic;
+                color: #555;
+                margin-bottom: 15px;
+                line-height: 1.5;
+              "
+            ></div>
+            <button class="btn" onclick="getNewQuote()">
+              <i class="fas fa-refresh"></i> New Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+  </body>
+</html>
